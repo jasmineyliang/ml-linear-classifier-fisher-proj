@@ -7,11 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/12nnGyIoknUFxp7cw6knK7F6hI6Ul90XY
 """
 
-import numpy as np 
+import numpy as np
 import matplotlib.pyplot as plt
-import numpy # import again 
-import matplotlib.pyplot # import again 
-import numpy.linalg 
+import numpy.linalg
 import numpy.random
 
 def generate_data(Para1, Para2, seed=0):
@@ -94,8 +92,6 @@ def plot_mse(X, y, filename):
 
     plt.plot(positivex,positivey,'.b')
     plt.plot(negativex,negativey,'.r')
-    plt.show()
-
     matplotlib.pyplot.savefig(filename)
     matplotlib.pyplot.close('all') # it is important to always clear the plot
     return w
@@ -160,8 +156,6 @@ def plot_fisher(X, y, filename):
   plt.plot(x_ticks, y_ticks)
   plt.plot(class1[:,0],class1[:,1],'.b')
   plt.plot(class2[:,0],class2[:,1],'.r')
-  plt.show()
-
   matplotlib.pyplot.savefig(filename)
   matplotlib.pyplot.close('all')
   return w
